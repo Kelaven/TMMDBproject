@@ -1,83 +1,78 @@
+/*! Paramètres généraux */
+/* Ne laisser le dégradé qu'en fin de page */
 body{
     background-repeat: no-repeat;
 }
+/* Modifier la scrollbar générale */
 body::-webkit-scrollbar {
-    background-color: #28104c; /* color of the scroll thumb */
+    background-color: #28104c;
     width: 22px;
 }
 body::-webkit-scrollbar-track {
-    background: #28104c; /* color of the tracking area */
+    background: #28104c;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #3d246b; /* color of the scroll thumb */
-    border-radius: 8px; /* roundness of the scroll thumb */
-    border: 5px solid #28104c; /* creates padding around scroll thumb */
+    background-color: #3d246b;
+    border-radius: 8px;
+    border: 5px solid #28104c;
 }
-
+/* Police d'écriture du titre général */
 h1{
     font-family: 'Montserrat', sans-serif;
 }
-
+/* Longueur du hr */
 hr{
     width: 530px;
 }
 
+
+/*! Style des cartes */
+/* Contour des cartes */
 .card{
     border: 1px solid #6f42c1;
     box-shadow: 0 0 2px rgba(111,66,193,.9), 0 0 2px rgba(111,66,193,.4), 0 0 0.3rem rgba(111,66,193,.3), 0 0 0.4rem rgba(111,66,193,.1);
 }
-
+/* Adapter les images pour qu'elles aient la même taille */
 .img-fluid{
     height: 100%;
-    /* object-fit: cover; */
-    /* height: 325px; */
 }
-/* .img-fluid:hover{
-    transform: scale(1.5);
-} */
-
+/* Placer équitablement les éléments à droite de l'image */
 #place-elements{
-    /* background-color: red; */
     height: 300px;
     display: flex;
     flex-wrap: wrap;
 }
-
+/* Styliser les résumés des films */
 .card-text-overview{
-    /* background-color: red; */
     overflow: auto;
     height: 174px !important;
-    text-align: justify;
+    /*? text-align: justify; */
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     padding-right: 7px;
 }
-/* overviews scrollbars style */
+/* Style des scrollbars dans les résumés */
 .card-text-overview::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
+    width: 12px;
 }
 .card-text-overview::-webkit-scrollbar {
-    background-color: #28104c; /* color of the scroll thumb */
+    background-color: #28104c;
     border-radius: 5px;
     top: 20px !important;
 }
 .card-text-overview::-webkit-scrollbar-track {
-    background: #28104c; /* color of the tracking area */
+    background: #28104c;
     border-radius: 5px;
 }
 .card-text-overview::-webkit-scrollbar-thumb {
-    background-color: #6f42c1; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 4px solid #28104c; /* creates padding around scroll thumb */
+    background-color: #6f42c1;
+    border-radius: 20px;
+    border: 4px solid #28104c;
 }
-
+/* Titre des films */
 .card-title{
     font-family: 'Lobster', sans-serif;
-    font-size: 27px;
-}
-
-.card-text-average{
-
+    font-size: 26px;
 }
 
 
