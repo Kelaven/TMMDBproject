@@ -52,7 +52,7 @@ fetch("./public/assets/data/movies.json")
     .then(response => response.json())
     .then((data) => {
         data.results.map(result => {
-            const card = `<div class="col-12 px-0 col-sm-6 px-sm-1 col-xl-4 px-xl-2 card-col">
+            const card = `<div class="col-12 px-0 col-sm-6 px-sm-1 col-xl-4 px-xl-2 card-col mb-3">
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row g-0">
                                     <div class="col-md-5">
@@ -60,7 +60,8 @@ fetch("./public/assets/data/movies.json")
                                     </div>
                                     <div class="col-md-7">
                                         <div class="card-body">
-                                        <h5 class="card-title">${result.original_title}</h5>
+                                        <div id="place-elements">
+                                            <h5 class="card-title">${result.original_title}</h5>
                                             <p class="card-text card-text-overview">${result.overview}</p>
                                             <p class="card-text card-text-average">${result.vote_average}<small class="text-body-secondary"></small></p>
                                         </div>

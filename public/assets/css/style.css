@@ -1,5 +1,17 @@
 body{
-    height: 340vh;
+    height: 350vh;
+}
+body::-webkit-scrollbar {
+    background-color: #28104c; /* color of the scroll thumb */
+    width: 22px;
+}
+body::-webkit-scrollbar-track {
+    background: #28104c; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #3d246b; /* color of the scroll thumb */
+    border-radius: 8px; /* roundness of the scroll thumb */
+    border: 5px solid #28104c; /* creates padding around scroll thumb */
 }
 
 h1{
@@ -20,18 +32,25 @@ hr{
 }
 
 .img-fluid{
-    /* height: 100%; */
+    height: 100%;
     /* object-fit: cover; */
-    height: 325px;
+    /* height: 325px; */
 }
 /* .img-fluid:hover{
     transform: scale(1.5);
 } */
 
+#place-elements{
+    /* background-color: red; */
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card-text-overview{
     /* background-color: red; */
     overflow: auto;
-    height: 174px;
+    height: 174px !important;
     text-align: justify;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -62,6 +81,8 @@ hr{
 }
 
 .card-text-average{
-    position: relative;
-    bottom: 0px;
+
 }
+
+
+
