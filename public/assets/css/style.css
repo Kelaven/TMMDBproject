@@ -29,7 +29,8 @@ hr{
 /*! Style des cartes */
 /* Contour des cartes */
 .card{
-    border: 1px solid #6f42c1;
+    background-color: #120626;
+    border: 1px solid rgba(111,66,193,0.8);
     box-shadow: 0 0 2px rgba(111,66,193,.9), 0 0 2px rgba(111,66,193,.4), 0 0 0.3rem rgba(111,66,193,.3), 0 0 0.4rem rgba(111,66,193,.1);
 }
 /* Adapter les images pour qu'elles aient la même taille */
@@ -71,8 +72,12 @@ hr{
 }
 /* Titre des films */
 .card-title{
-    font-family: 'Lobster', sans-serif;
-    font-size: 26px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 29px;
+}
+/* surbrillance des étoiles */
+.fa-star, .card-text-average{
+    text-shadow: 0 0 1px rgba(255,255,255,.6), 0 0 3px rgba(255,255,255,.5), 0 0 0.5rem rgba(255,255,255,.3), 0 0 2rem rgba(255,255,255,.2);
 }
 
 
