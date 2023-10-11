@@ -1,5 +1,5 @@
 body{
-    height: 350vh;
+    background-repeat: no-repeat;
 }
 body::-webkit-scrollbar {
     background-color: #28104c; /* color of the scroll thumb */
@@ -25,10 +25,6 @@ hr{
 .card{
     border: 1px solid #6f42c1;
     box-shadow: 0 0 2px rgba(111,66,193,.9), 0 0 2px rgba(111,66,193,.4), 0 0 0.3rem rgba(111,66,193,.3), 0 0 0.4rem rgba(111,66,193,.1);
-}
-
-.card-col{
-    height: 341px;
 }
 
 .img-fluid{
