@@ -20,7 +20,7 @@ fetch("./public/assets/data/movies.json")
                             </div>
                         </div>`
             const card1 = document.querySelector(".card-col");
-            card1.innerHTML += card
+            card1.innerHTML += card;
         });
     });
     
