@@ -24,7 +24,7 @@ fetch("./public/assets/data/movies.json")
         });
     });
     
-
+// test
 
 //! Fonction pour diviser par deux la note afin de passer d'une moyenne /10 à une moyenne /5
 function divideRate(numberTest){
