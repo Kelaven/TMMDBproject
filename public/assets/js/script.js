@@ -13,7 +13,7 @@ fetch("./public/assets/data/movies.json")
                                         <div id="place-elements">
                                             <h5 class="card-title">${result.original_title}</h5>
                                             <p class="card-text card-text-overview">${result.overview}</p>
-                                            <p class="card-text card-text-average"><i class="fa-solid fa-star pe-2"></i>${result.vote_average}<small class="text-body-secondary"></small></p>
+                                            <p class="card-text card-text-average">${displayStars(roundHalf(divideRate(result.vote_average)))}<small class="text-body-secondary"></small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -26,20 +26,31 @@ fetch("./public/assets/data/movies.json")
     
 
 
+//! Fonction pour diviser par deux la note afin de passer d'une moyenne /10 à une moyenne /5
+function divideRate(numberTest){
+    return numberTest / 2;
+};
 
+//! Fonction pour arrondir un nombre à la demie-unité la plus proche :  
+function roundHalf(number) {
+    return Math.round(number * 2) / 2;
+};
 
+//! Fonction pour afficher les étoiles selon les notes
+function displayStars(rating) {
+    let displayStars = "";
 
+    if (rating === 4.5) {
+        displayStars = `<i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star-half-stroke "></i>`;
+    } else if (rating === 4) {
+        displayStars = `<i class="fa-solid fa-star "></i> <i class="fa-solid fa-star "></i> <i class="fa-solid fa-star "></i> <i class="fa-solid fa-star "></i><i class="fa-regular fa-star "></i>`;
+    } else if (rating === 3.5) {
+        displayStars = `<i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star-half-stroke "></i><i class="fa-regular fa-star "></i>`;
+    } else if (rating === 3) {
+        displayStars = `<i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-regular fa-star "></i><i class="fa-regular fa-star "></i>`;
+    } else {
+        displayStars = `<i class="fa-solid fa-star"></i> ${result.vote_average}`;
+    }
+        return displayStars;
+};
 
-
-
-    //? Fonction pour arrondir un nombre à la demie-unité la plus proche :  
-//     // let number = 0.2
-//     function roundHalf(number) {
-//                             let result 
-//                             result = Math.round(number * 2) / 2
-//                             return result;
-//                         };
-// // let roundedNumber = roundHalf(number)
-// // console.log(roundedNumber)
-    
-    
