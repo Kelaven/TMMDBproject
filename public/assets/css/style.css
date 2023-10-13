@@ -6,7 +6,7 @@ body{
 /* Modifier la scrollbar générale */
 body::-webkit-scrollbar {
     background-color: #28104c;
-    width: 22px;
+    width: 24px;
 }
 body::-webkit-scrollbar-track {
     background: #28104c;
