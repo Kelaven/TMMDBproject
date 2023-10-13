@@ -6,7 +6,7 @@ body{
 /* Modifier la scrollbar générale */
 body::-webkit-scrollbar {
     background-color: #28104c;
-    width: 24px;
+    width: 22px;
 }
 body::-webkit-scrollbar-track {
     background: #28104c;
@@ -73,7 +73,7 @@ hr{
 /* Titre des films */
 .card-title{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 29px;
+    font-size: 28px;
 }
 /* surbrillance des étoiles */
 .fa-star, .card-text-average{
